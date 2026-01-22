@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <title>EM Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">EM</div>
+        <ul class="nav-links">
+            <li><a href="#acceuil" onclick="showPage('acceuil')" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="#apropos" onclick="showPage('apropos')" data-fr="A propos" data-en="About">A propos</a></li>
+            <li><a href="#competences" onclick="showPage('competences')" data-fr="Compétences"
+                    data-en="Skills">Compétences</a></li>
+            <li><a href="#projets" onclick="showPage('projets')" data-fr="Projets" data-en="Projects">Projets</a></li>
+            <li><a href="#contact" onclick="showPage('contact')" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <button class="langue" onclick="changeLangage()">
+            <span class="lang-flag">🇬🇧</span>
+            <span class="lang-text">EN</span>
+        </button>
+    </nav>
+
+
+    <!-- Page d'acceuil -->
+    <div id="acceuil" class="page active">
+        <section class="first">
+            <div class="first-bg"></div>
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+
+            <div class="first-content">
+                <h1 class="first-title">EM Portfolio</h1>
+                <p class="first-subtitle" data-fr="Analyste Technico-Fonctionnelle"
+                    data-en="Technical-Functional Analyst">Analyste Technico-Fonctionnelle</p>
+                <p class="first-description"
+                    data-fr="Passionnée par la transformation digitale et les solutions data-driven. Je transforme les besoins métiers en solutions technologiques innovantes"
+                    data-en="Passionate about digital transformation and data-driven solutions. I transform business needs into innovative technological solutions.">
+                    Passionnée par la transformation digitale et les solutions data-driven.<br>Je transforme les besoins
+                    métiers en solutions technologiques innovantes
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#projets" class="btn btn-primary" data-fr="Voir mes projets" data-en="View my projects"
+                        onclick="showPage('projets')">
+                        Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-primary" data-fr="Me contacter" data-en="Contact me"
+                        onclick="showPage('contact')">
+                        Me contacter
+                    </a>
+                    <a href="mailto:miesther@yahoo.com?subject=Demande%20de%20CV&body=Bonjour%2C%0A%0AJe%20souhaiterais%20recevoir%20votre%20CV%20complet.%0A%0ACordialement"
+                        class="btn btn-secondary" data-fr="📨Demander mon CV" data-en="📨Request my CV">
+                        📨Demander mon CV
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Page à propos -->
+    <div id="apropos" class="page">
+        <section>
+            <h2 class="section-titre" data-fr="A propos de moi" data-en="About me">A propos de moi</h2>
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <p data-fr="Diplômée d'un <span class='surligne'>Master en Management des Systèmes d’Information</span>, je suis spécialisée dans la transformation digitale et l’analyse de données."
+                        data-en="I hold a <span class='surligne'>Master’s degree in Management of Information Systems</span>, with a specialization in digital transformation and data analysis.">
+                        Diplômée d’un <span data-fr="Master en Management des Systèmes d’Information"
+                            data-en="Master’s degree in Management of Information Systems" class="surligne">Master en
+                            Management des Systèmes d’Information</span>, je
+                        suis spécialisée dans la transformation digitale et l’analyse de données.
+                    </p>
+
+                    <p data-fr="Forte d'une expérience chez <span class='surligne'>JDE Peet's France</span>, j'ai développé une expertise en <span class='surligne'>Power BI</span>, <span class='surligne'>Power Apps</span> et dans la conception de solutions low-code orientées métier."
+                        data-en="Through my experience at <span class='surligne'>JDE Peet's France</span>, I developed strong expertise in <span class='surligne'>Power BI</span>, <span class='surligne'>Power Apps</span>, and the design of business-oriented low-code solutions.">
+                        Forte d’une expérience chez <span data-fr="JDE Peet’s France" data-en="JDE Peet’s France"
+                            class="surligne">JDE Peet’s France</span>, j’ai développé une expertise en <span
+                            data-fr="Power BI" data-en="Power BI" class="surligne">Power BI</span>, <span
+                            data-fr="Power Apps" data-en="Power Apps" class="surligne">Power Apps</span> et dans la
+                        conception de solutions low-code orientées métier.
+                    </p>
+
+                    <p data-fr="Ma passion pour le <span class='surligne'>développement web</span> (HTML, CSS, JavaScript, PHP) constitue un véritable atout que je mets au service des projets auxquels je contribue. Elle me permet de mieux comprendre les contraintes techniques, de concevoir des solutions plus adaptées aux besoins métiers et de faire le lien entre les équipes fonctionnelles et techniques. Dans une logique d'amélioration continue, je cherche à renforcer mes compétences vers des technologies plus avancées telles que <span class='surligne'>React</span>, <span class='surligne'>Node.js</span>, ainsi que des langages plus bas niveau comme le <span class='surligne'>C</span>."
+                        data-en="My passion for <span class='surligne'>web development</span> (HTML, CSS, JavaScript, PHP) is a real asset that I bring to the projects I work on. It enables me to better understand technical constraints, design solutions that truly meet business needs, and act as a bridge between functional and technical teams. With a continuous improvement mindset, I aim to strengthen my skills by moving toward more advanced technologies such as <span class='surligne'>React</span>, <span class='surligne'>Node.js</span>, as well as lower-level languages like <span class='surligne'>C</span>.">
+                        Ma passion pour le <span class="surligne">développement web</span> (HTML, CSS, JavaScript, PHP)
+                        constitue un
+                        véritable atout que je mets au service des projets auxquels je contribue. Elle me permet de
+                        mieux comprendre les contraintes techniques, de concevoir des solutions plus adaptées aux
+                        besoins métiers et de faire le lien entre les équipes fonctionnelles et techniques. Dans une
+                        logique d'amélioration continue, je cherche à renforcer mes compétences vers des technologies
+                        plus avancées telles que <span class="surligne">React</span>,
+                        <span class="surligne">Node.js</span>, ainsi que des
+                        langages plus bas niveau comme le <span class="surligne">C</span>.
+                    </p>
+
+                    <p data-fr="Cette appétence pour le développement me permet de concevoir à la fois des solutions décisionnelles (BI) et des applications métiers, en proposant des outils concrets, évolutifs et réellement utiles aux entreprises. Mon objectif est de faciliter le quotidien des utilisateurs tout en optimisant les processus métiers grâce à la data et à l’automatisation."
+                        data-en="This strong interest in development allows me to design both Business Intelligence solutions and business applications, delivering concrete, scalable, and high-value tools for organizations. My goal is to simplify users’ daily work while optimizing business processes through data and automation.">
+                        Cette appétence pour le développement me permet de concevoir à la fois des solutions
+                        décisionnelles (BI) et des applications métiers, en proposant des outils concrets, évolutifs et
+                        réellement utiles aux entreprises. Mon objectif est de faciliter le quotidien des utilisateurs
+                        tout en optimisant les processus métiers grâce à la data et à l’automatisation.
+                    </p>
+
+                    <p data-fr="Enfin, je suis particulièrement <span class='surligne'>sensible aux enjeux de sécurité des données</span> et formée aux problématiques de conformité (<span class='surligne'>RGPD</span>, <span class='surligne'>EBIOS RM</span>, <span class='surligne'>AI Security</span>). La protection des données personnelles et la gouvernance des données sont au cœur de mes préoccupations dans chacun de mes projets."
+                        data-en="Finally, I am particularly <span class='surligne'>sensitive to data security issues</span> and trained in compliance-related topics (<span class='surligne'>GDPR</span>, <span class='surligne'>EBIOS RM</span>, <span class='surligne'>AI Security</span>). Data protection and data governance are central concerns in all the projects I undertake.">
+                        Enfin, je suis particulièrement <span class="surligne">sensible aux enjeux de sécurité
+                            des données</span> et formée aux problématiques de conformité (<span
+                            class="surligne">RGPD</span>, <span class="surligne">EBIOS RM</span>, <span
+                            class="surligne">AI Security</span>). La
+                        protection des données personnelles et la gouvernance des données sont au cœur de mes
+                        préoccupations dans chacun de mes projets.
+                    </p>
+
+                    <div class="cta-buttons" style="justify-content: flex-start; margin-top: 2rem;">
+                        <a href="mailto:miesther@yahoo.com?subject=Demande%20de%20CV&body=Bonjour%2C%0A%0AJe%20souhaiterais%20recevoir%20votre%20CV%20complet.%0A%0ACordialement"
+                            class="btn btn-secondary" data-fr="📨Demander mon CV" data-en="📨Request my CV">📨Demander
+                            mon CV</a>
+                    </div>
+                </div>
+
+                <div class="stats-grille">
+                    <div class="stat-carte">
+                        <div class="stat-numero">1+</div>
+                        <div class="stat-texte" data-fr="Année d'expérience" data-en="Years of Experience">Année
+                            d'expérience</div>
+                    </div>
+                    <div class="stat-carte">
+                        <div class="stat-numero">5+</div>
+                        <div class="stat-texte" data-fr="Rapports Power BI" data-en="Power BI dashboards & reports">
+                            Rapports Power BI</div>
+                    </div>
+                    <div class="stat-carte">
+                        <div class="stat-numero">3+</div>
+                        <div class="stat-texte" data-fr="Projets Majeurs" data-en="Key Projects">Projets Majeurs</div>
+                    </div>
+                    <div class="stat-carte">
+                        <div class="stat-numero">15+</div>
+                        <div class="stat-texte" data-fr="Technologies" data-en="Technical stack">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Compétences -->
+    <div id="competences" class="page">
+        <section>
+            <h2 class="section-titre">Mes Compétences</h2>
+            <div class="competences-container">
+                <div class="competences-carte">
+                    <div class="competence-icon">📊</div>
+                    <h3 data-fr="Business Intelligence" data-en="Business Intelligence">Business Intelligence</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">Power BI<br><span
+                                data-fr="(modélisation, visualisation, gouvernance)"
+                                data-en="(data modeling, visualization, and governance)">(modélisation, visualisation,
+                                gouvernance)</span></span>
+                        <span class="competence-tag">DAX<br><span data-fr="(mesures, KPI, calculs avancés)"
+                                data-en="(measures, KPIs, advanced calculations)">(mesures, KPI, calculs
+                                avancés)</span></span>
+                        <span class="competence-tag">Power Query/M<br><span
+                                data-fr="(import, transformation, nettoyage, export)"
+                                data-en="(import, transformation, data cleansing, export)">(import, transformation,
+                                nettoyage, export)</span></span>
+                        <span class="competence-tag">Excel<br><span data-fr="(formules, TCD, analyse)"
+                                data-en="(Formulas, pivot tables, data analysis)">(formules, TCD, analyse)</span></span>
+                        <span class="competence-tag">SQL/PLSQL<br><span
+                                data-fr="(requêtes simples, procédures, triggers)"
+                                data-en="(simple queries, procedures, triggers)">(requêtes simples, procédures,
+                                triggers)</span></span>
+                        <span class="competence-tag">Alteryx<br><span
+                                data-fr="(traitement, nettoyage, automatisation, export)"
+                                data-en="(data processing, data cleaning, automation, export)">(traitement, nettoyage,
+                                automatisation, export)</span></span>
+                        <span class="competence-tag">Python<br><span data-fr="(analyse, visualisation, modélisation)"
+                                data-en="(analysis, visualization, modeling)">(analyse, visualisation,
+                                modélisation)</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">⚡</div>
+                    <h3 data-fr="Low-Code & Automatisation" data-en="Low-Code & Automation">Low-Code & Automatisation
+                    </h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">Power Apps<br><span data-fr="applications métiers"
+                                data-en="business applications">applications métiers</span></span>
+                        <span class="competence-tag">Power Automate<br><span
+                                data-fr="automatisations de processus métier" data-en="business process automation">
+                                automatisations de processus métier</span></span>
+                        <span class="competence-tag">SharePoint<br><span
+                                data-fr="gestion documentaire : stockage, versions, droits d’accès, collaboration"
+                                data-en="document management: storage, version control, access rights, collaboration">gestion
+                                documentaire : stockage, versions, droits d’accès, collaboration</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">💻</div>
+                    <h3 data-fr="Développement Web" data-en="Development">Développement</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">HTML/CSS<br><span
+                                data-fr="(structure des pages web, mise en forme, principes de responsive design)"
+                                data-en="(web page structure, styling, responsive design principles)">(structure des
+                                pages web, mise en forme, principes de responsive design)</span></span>
+                        <span class="competence-tag">JavaScript<br><span
+                                data-fr="(logique applicative, interactions côté client, manipulation du DOM)"
+                                data-en="(application logic, client-side interactions, DOM manipulation)">(logique
+                                applicative, interactions côté client, manipulation du DOM)</span></span>
+                        <span class="competence-tag">PHP<br><span
+                                data-fr="(logique backend, gestion de formulaires, scripts côté serveur)"
+                                data-en="(backend logic, form handling, server-side scripts)">(logique backend, gestion
+                                de formulaires, scripts côté serveur)</span></span>
+                        <span class="competence-tag">Git/Github<br><span
+                                data-fr="(gestion de versions, suivi des modifications, collaboration)"
+                                data-en="(version control, change tracking, collaboration)">(gestion de versions, suivi
+                                des modifications, collaboration)</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">☁️</div>
+                    <h3 data-fr="Cloud & Bases de Données" data-en="Cloud & Databases">Cloud & Bases de Données</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">Azure<br><span
+                                data-fr="(services data de base, familiarisation avec l’environnement cloud)"
+                                data-en="(basic data services, cloud environment familiarization)">(services data de
+                                base, familiarisation avec l’environnement cloud)</span></span>
+                        <span class="competence-tag">Oracle<br><span
+                                data-fr="(requêtes SQL, PL/SQL, modélisation relationnelle)"
+                                data-en="(SQL queries, PL/SQL, relational modeling)">(requêtes SQL, PL/SQL, modélisation
+                                relationnelle)</span></span>
+                        <span class="competence-tag">SAP<br><span
+                                data-fr="(navigation, compréhension fonctionnelle des processus métiers)"
+                                data-en="(navigation, business process understanding)">(navigation, compréhension
+                                fonctionnelle des processus métiers)</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">🎯</div>
+                    <h3 data-fr="Gestion de Projet" data-en="Project Management">Gestion de Projet</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">Agile/SCRUM<br><span
+                                data-fr="(gestion itérative, sprints, user stories, collaboration équipes métier & IT)"
+                                data-en="(iterative management, sprints, user stories, collaboration between business and IT teams)">(gestion
+                                itérative, sprints, user stories, collaboration équipes métier & IT)</span></span>
+                        <span class="competence-tag">Jira<br><span
+                                data-fr="(suivi des tickets, gestion des tâches, backlog, avancement des projets)"
+                                data-en="(task tracking, ticket management, backlog, project progress monitoring)">(suivi
+                                des tickets, gestion des tâches, backlog, avancement des projets)</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">🔐</div>
+                    <h3 data-fr="Sécurité & Conformité" data-en="Security & Compliance">Sécurité & Conformité</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag">RGPD<br><span
+                                data-fr="(principes de protection des données, documentation de conformité : registre des traitements, politiques de confidentialité, analyse d’impact (DPIA), sensibilisation aux obligations légales)"
+                                data-en="(data protection principles, compliance documentation: records of processing activities, privacy policies, data protection impact assessments (DPIA), regulatory awareness)">(principes
+                                de protection des données, documentation de conformité : registre des traitements,
+                                politiques de confidentialité, analyse d’impact (DPIA), sensibilisation aux obligations
+                                légales)</span></span>
+                        <span class="competence-tag">EBIOS RM<br><span
+                                data-fr="(notions d’analyse des risques, approche méthodologique)"
+                                data-en="(risk analysis concepts, methodological approach)">(notions d’analyse des
+                                risques, approche méthodologique)</span></span>
+                        <span class="competence-tag">AI Security<br><span
+                                data-fr="(enjeux de sécurité et de conformité liés à l’intelligence artificielle)"
+                                data-en="(security and compliance challenges related to artificial intelligence)">(enjeux
+                                de sécurité et de conformité liés à l’intelligence artificielle)</span></span>
+                        <span class="competence-tag">ISC2 Security<br><span
+                                data-fr="(bases de la cybersécurité, bonnes pratiques, sensibilisation)"
+                                data-en="(cybersecurity basics, best practices, awareness)">(bases de la cybersécurité,
+                                bonnes pratiques, sensibilisation)</span></span>
+                    </div>
+                </div>
+
+                <div class="competences-carte">
+                    <div class="competence-icon">✨</div>
+                    <h3 data-fr="Soft Skills" data-en="Soft Skills">Soft Skills</h3>
+                    <div class="competence-list">
+                        <span class="competence-tag" data-fr="Analyse" data-en="Analysis">Analyse</span>
+                        <span class="competence-tag" data-fr="Adaptabilité" data-en="Adaptability">Adaptabilité</span>
+                        <span class="competence-tag" data-fr="Communication"
+                            data-en="Communication">Communication</span>
+                        <span class="competence-tag" data-fr="Travail d'équipe" data-en="Teamwork">Travail
+                            d'équipe</span>
+                        <span class="competence-tag" data-fr="Autonomie" data-en="Autonomy">Autonomie</span>
+                        <span class="competence-tag" data-fr="Autodidacte" data-en="Autodidacty">Autodidacte</span>
+                        <span class="competence-tag" data-fr="Esprit critique" data-en="Critical thinking">Esprit
+                            critique</span>
+                        <span class="competence-tag" data-fr="Curiosité" data-en="Curiosity">Curiosité</span>
+                        <span class="competence-tag" data-fr="Esprit critique"
+                            data-en="Critical thinking">pedagogie</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Page Projets -->
+    <div id="projets" class="page">
+        <section>
+            <h2 class="section-titre" data-fr="Projets réalisés" data-en="Completed projects">Projets réalisés</h2>
+            <div class="projets-grille">
+                <div class="projet-carte">
+                    <div class="projet-titre">
+                        <h3 data-fr="🔍 Gouvernance des données Power BI" data-en="Power BI Data Governance">🔍
+                            Gouvernance des données Power BI</h3>
+                    </div>
+                    <div class="projet-body">
+                        <p data-fr="Mémoire de Master portant sur les bonnes pratiques de gouvernance des données, illustré par l'implémentation de Power BI chez JDE Peet's France."
+                            data-en="Master's thesis on data governance best practices, illustrated by Power BI implementation at JDE Peet's France.">
+                            Mémoire de Master portant sur les bonnes pratiques de gouvernance des données, illustré par
+                            l'implémentation de Power BI chez JDE Peet's France.
+                        </p>
+                    </div>
+                    <!-- <div class="projet-footer">
+                        <a href="" data-fr="Lien vers le projet" data-en="Link to the project">Lien vers le projet</a>
+                    </div> -->
+                </div>
+
+                <div class="projet-carte">
+                    <div class="projet-titre">
+                        <h3 data-fr="🎯 Système de Recommandations Python" data-en="🎯 Python Recommendation System">🎯
+                            Système de Recommandations Python</h3>
+                    </div>
+                    <div class="projet-body">
+                        <p data-fr="Analyse de données sous Python pour l'extraction, transformation et visualisation de données, générant des recommandations personnalisées."
+                            data-en="Data analysis in Python for data extraction, transformation and visualization, generating personalized recommendations.">
+                            Analyse de données sous Python pour l'extraction, transformation et
+                            visualisation de données, générant des recommandations personnalisées.
+                        </p>
+                    </div>
+                    <!-- <div class="projet-footer">
+                        <a href="" data-fr="Lien vers le projet" data-en="Link to the project">Lien vers le projet</a>
+                    </div> -->
+                </div>
+
+                <div class="projet-carte">
+                    <div class="projet-titre">
+                        <h3 data-fr="🌐 Junior Consulting Website" data-en="🌐 Junior Consulting Website">🌐 Junior
+                            Consulting Website</h3>
+                    </div>
+                    <div class="projet-body">
+                        <p data-fr="Développement full-stack d'un site web comprenant le recueil des besoins client, base de données et documentation technico-fonctionnelle complète."
+                            data-en="Full-stack development of a website including client requirements gathering, database and complete technical-functional documentation.">
+                            Développement full-stack d'un site web comprenant le recueil des besoins
+                            client, base de données et documentation technico-fonctionnelle complète.
+                        </p>
+                    </div>
+                    <!-- <div class="projet-footer">
+                        <a href="" data-fr="Lien vers le projet" data-en="Link to the project">Lien vers le projet</a>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Page de contact -->
+    <div id="contact" class="page">
+        <section>
+            <h2 class="section-titre" data-fr="Me Contacter" data-en="Contact Me">Me Contacter</h2>
+            <div class="contact-container">
+                <p data-fr="Disponible immédiatement pour un poste en CDI - Mobilité France et International"
+                    data-en="Immediately available for a permanent position - Mobility in France and International">
+                    Disponible immédiatement pour un poste en CDI<br>Mobilité France et International</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <span>miesther@yahoo.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        <span data-fr="Disponible sur demande" data-en="Available upon request">Disponible sur
+                            demande</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span data-fr="France & International" data-en="France & International">France &
+                            International</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="mailto:miesther@yahoo.com?subject=Prise%20de%20Contact&body=Bonjour%20Esther%2C%0A%0A"
+                        class="btn btn-primary" data-fr="Envoyer un Email" data-en="Send an Email">Envoyer un Email</a>
+                    <a href="mailto:miesther@yahoo.com?subject=Demande%20de%20CV&body=Bonjour%2C%0A%0AJe%20souhaiterais%20recevoir%20votre%20CV%20complet.%0A%0ACordialement"
+                        class="btn btn-secondary" data-fr="📧 Demander mon CV" data-en="📧 Request my CV">📧 Demander
+                        mon CV</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Esther MOUITY ITOUMBA - <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous
+                droits réservés</span></p>
+        <div style="margin-top: 1rem; font-size: 0.85rem; color: #888;">
+            <p>🔒 <strong data-fr="Protection des données personnelles" data-en="Personal Data Protection">Protection
+                    des données personnelles</strong></p>
+            <p style="max-width: 800px; margin: 0.5rem auto; line-height: 1.6;"
+                data-fr="Conformément au RGPD, aucune donnée personnelle n'est collectée sur ce site. Vos informations ne sont ni stockées, ni partagées avec des tiers. Pour toute demande concernant vos données ou pour recevoir mon CV complet, contactez-moi directement par email."
+                data-en="In accordance with GDPR, no personal data is collected on this site. Your information is neither stored nor shared with third parties. For any request concerning your data or to receive my complete CV, contact me directly by email.">
+                Conformément au RGPD, aucune donnée personnelle n'est collectée sur ce site.
+                Vos informations ne sont ni stockées, ni partagées avec des tiers.
+                Pour toute demande concernant vos données ou pour recevoir mon CV complet,
+                contactez-moi directement par email.
+            </p>
+            <p style="margin-top: 0.5rem;">
+                <a href="#" onclick="openPrivacyModal()" class="privacy-link"
+                    data-fr="📄 Politique de confidentialité complète" data-en="📄 Full Privacy Policy">
+                    📄 Politique de confidentialité complète
+                </a>
+                |
+                <a href="mailto:miesther@yahoo.com?subject=Question%20RGPD" class="privacy-link"
+                    data-fr="Exercer vos droits RGPD" data-en="Exercise your GDPR rights">
+                    Exercer vos droits RGPD
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePrivacyModal()">&times;</button>
+
+            <h2 data-fr="🔒 Politique de Confidentialité" data-en="🔒 Privacy Policy">🔒 Politique de Confidentialité
+            </h2>
+            <p><em data-fr="Dernière mise à jour : Janvier 2025" data-en="Last updated: January 2025">Dernière mise à
+                    jour : Janvier 2025</em></p>
+
+            <h3 data-fr="1. Responsable du traitement" data-en="1. Responsible for processing">1. Responsable du
+                traitement</h3>
+            <p data-fr="Le site portfolio personnel d'Esther MOUITY ITOUMBA est géré par Esther MOUITY ITOUMBA. 
+            Contact : miesther@yahoo.com" data-en="The Esther MOUITY ITOUMBA personal portfolio website is managed by Esther MOUITY ITOUMBA.
+                Contact : miesther@yahoo.com">
+                Le site portfolio personnel d'Esther MOUITY ITOUMBA est géré par Esther MOUITY ITOUMBA.<br>
+                Contact : miesther@yahoo.com
+            </p>
+
+            <h3 data-fr="2. Données collectées" data-en="2. Data collected">2. Données collectées</h3>
+            <p data-fr="Ce site ne collecte AUCUNE donnée personnelle."
+                data-en="This site does not collect ANY personal data."><strong>Ce site ne collecte AUCUNE donnée
+                    personnelle.</strong></p>
+            <ul>
+                <li data-fr="❌ Aucun cookie de tracking ou analytique" data-en="❌ No tracking or analytical cookies">❌
+                    Aucun cookie de tracking ou analytique</li>
+                <li data-fr="❌ Aucun formulaire de collecte de données" data-en="❌ No data collection form">❌ Aucun
+                    formulaire de collecte de données</li>
+                <li data-fr="❌ Aucun stockage d'informations personnelles" data-en="❌ No personal data storage">❌ Aucun
+                    stockage d'informations personnelles</li>
+                <li data-fr="❌ Aucun traçage de votre navigation" data-en="❌ No tracking of your navigation">❌ Aucun
+                    traçage de votre navigation</li>
+            </ul>
+
+            <h3 data-fr="3. Hébergement" data-en="3. Hosting">3. Hébergement</h3>
+            <p data-fr="Ce site est hébergé sur une plateforme sécurisée avec certificat SSL (HTTPS). L'hébergeur peut collecter des logs techniques standards (adresse IP, navigateur) pour assurer la sécurité et le fonctionnement du service, conformément à ses propres obligations légales."
+                data-en="This site is hosted on a secure platform with an SSL (HTTPS) certificate. The host may collect standard technical logs (IP address, browser) to ensure security and service operation, in accordance with its own legal obligations.">
+                Ce site est hébergé sur une plateforme sécurisée avec certificat SSL (HTTPS).
+                L'hébergeur peut collecter des logs techniques standards (adresse IP, navigateur)
+                pour assurer la sécurité et le fonctionnement du service, conformément à ses propres
+                obligations légales.
+            </p>
+
+            <h3 data-fr="4. Liens externes" data-en="4. External links">4. Liens externes</h3>
+            <p data-fr="Les boutons de contact utilisent votre client email local (mailto:). Aucune donnée n'est transmise à des tiers via ce site."
+                data-en="The contact buttons use your local email client (mailto:). No data is transmitted to third parties via this site.">
+                Les boutons de contact utilisent votre client email local (mailto:).
+                Aucune donnée n'est transmise à des tiers via ce site.
+            </p>
+
+            <h3 data-fr="5. Vos droits RGPD" data-en="5. Your GDPR rights">5. Vos droits RGPD</h3>
+            <p data-fr="Conformément au RGPD, vous disposez des droits suivants :"
+                data-en="In accordance with the GDPR, you have the following rights :">Conformément au RGPD, vous
+                disposez
+                des droits suivants :</p>
+            <ul>
+                <li data-fr="Droit d'accès" data-en="Right of access"><strong>Droit d'accès</strong> : Savoir quelles
+                    données sont détenues (aucune dans ce cas)</li>
+                <li data-fr="Droit de rectification" data-en="Right of rectification"><strong>Droit de
+                        rectification</strong> : Corriger des données inexactes</li>
+                <li data-fr="Droit à l'effacement" data-en="Right of erasure"><strong>Droit à l'effacement</strong> :
+                    Demander la suppression de vos données</li>
+                <li data-fr="Droit d'opposition" data-en="Right of objection"><strong>Droit d'opposition</strong> :
+                    S'opposer au traitement de vos données</li>
+                <li data-fr="Droit à la portabilité" data-en="Right of portability"><strong>Droit à la
+                        portabilité</strong> : Récupérer vos données dans un format utilisable</li>
+            </ul>
+            <p data-fr="Pour exercer ces droits, contactez-moi à :" data-en="To exercise these rights, contact me at :">
+                Pour exercer ces droits, contactez-moi à :
+                <a href="mailto:miesther@yahoo.com?subject=Demande%20RGPD" class="privacy-link">
+                    miesther@yahoo.com
+                </a>
+            </p>
+
+            <h3 data-fr="6. Sécurité" data-en="6. Security">6. Sécurité</h3>
+            <p data-fr="Ce site utilise le protocole HTTPS pour sécuriser les connexions. Aucune information sensible n'est stockée ou transmise via ce site."
+                data-en="This site uses the HTTPS protocol to secure connections. No sensitive information is stored or transmitted via this site.">
+                Ce site utilise le protocole HTTPS pour sécuriser les connexions.
+                Aucune information sensible n'est stockée ou transmise via ce site.
+            </p>
+
+            <h3 data-fr="7. Demande de CV" data-en="7. CV Request">7. Demande de CV</h3>
+            <p data-fr="Lorsque vous demandez mon CV via le bouton dédié, vous envoyez un email direct. Vos coordonnées me sont communiquées uniquement via cet email que vous contrôlez entièrement. Je m'engage à :"
+                data-en="When you request my CV via the dedicated button, you send an email directly. Your coordinates are only communicated to me via this email that you control entirely. I engage to :">
+                Lorsque vous demandez mon CV via le bouton dédié, vous envoyez un email direct.
+                Vos coordonnées me sont communiquées uniquement via cet email que vous contrôlez entièrement.
+                Je m'engage à :
+            </p>
+            <ul>
+                <li data-fr="✅ Utiliser votre email uniquement pour répondre à votre demande"
+                    data-en="✅ Use your email only to respond to your request">✅ Utiliser votre email uniquement pour
+                    répondre à votre demande</li>
+                <li data-fr="✅ Ne jamais partager vos coordonnées avec des tiers"
+                    data-en="✅ Never share your coordinates with third parties">✅ Ne jamais partager vos coordonnées
+                    avec des tiers</li>
+                <li data-fr="✅ Supprimer vos données sur simple demande" data-en="✅ Delete your data on simple request">
+                    ✅ Supprimer vos données sur simple demande</li>
+                <li data-fr="✅ Ne pas vous inscrire à des listes de diffusion sans consentement"
+                    data-en="✅ Do not subscribe to distribution lists without consent">✅ Ne pas vous inscrire à des
+                    listes de diffusion sans consentement</li>
+            </ul>
+
+            <h3 data-fr="8. Cookies" data-en="8. Cookies">8. Cookies</h3>
+            <p data-fr="Ce site n'utilise AUCUN cookie." data-en="This site does not use ANY cookie.">
+                <strong>Ce site n'utilise AUCUN cookie.</strong> Ni cookie de tracking, ni cookie analytique,
+                ni cookie publicitaire.
+            </p>
+
+            <h3 data-fr="9. Modifications" data-en="9. Modifications">9. Modifications</h3>
+            <p data-fr="Cette politique peut être mise à jour. La date de dernière modification est indiquée en haut de ce document."
+                data-en="This policy can be updated. The last modification date is indicated at the top of this document.">
+                Cette politique peut être mise à jour. La date de dernière modification est indiquée
+                en haut de ce document.
+            </p>
+
+            <h3 data-fr="10. Contact et réclamation" data-en="10. Contact and complaint">10. Contact et réclamation</h3>
+            <p data-fr="Pour toute question concernant cette politique de confidentialité : 📧 Email : miesther@yahoo.com "
+                data-en="For any questions
+                regarding this privacy policy :📧 Email : miesther@yahoo.com">
+                Pour toute question concernant cette politique de confidentialité :
+                📧 Email : <a href="mailto:miesther@yahoo.com" class="privacy-link" data-fr="miesther@yahoo.com"
+                    data-en="miesther@yahoo.com">miesther@yahoo.com</a>
+            </p>
+            <p data-fr="Vous avez également le droit de déposer une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) si vous estimez que vos droits ne sont pas respectés."
+                data-en="You also have the right to file a complaint with the CNIL (Commission Nationale de l'Informatique et des Libertés) if you believe your rights are not being respected.">
+                Vous avez également le droit de déposer une réclamation auprès de la CNIL
+                (Commission Nationale de l'Informatique et des Libertés) si vous estimez que vos
+                droits ne sont pas respectés.
+            </p>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <button onclick="closePrivacyModal()" class="btn btn-primary" data-fr="J'ai compris"
+                    data-en="I understand">J'ai compris</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variable pour stocker la langue actuelle
+        let currentLang = 'fr';
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            document.getElementById(pageId).classList.add('active');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function changeLangage() {
+            // Basculer entre FR et EN
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+
+            // Mettre à jour le bouton
+            const langButton = document.querySelector('.langue');
+            if (currentLang === 'en') {
+                langButton.innerHTML = '<span class="lang-flag">🇫🇷</span><span class="lang-text">FR</span>';
+            } else {
+                langButton.innerHTML = '<span class="lang-flag">🇬🇧</span><span class="lang-text">EN</span>';
+            }
+
+            // Traduire tous les éléments avec data-fr et data-en
+            const elements = document.querySelectorAll('[data-fr][data-en]');
+            elements.forEach(element => {
+                if (currentLang === 'en') {
+                    element.innerHTML = element.getAttribute('data-en');
+                } else {
+                    element.innerHTML = element.getAttribute('data-fr');
+                }
+            });
+        }
+
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('privacyModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closePrivacyModal();
+            }
+        });
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closePrivacyModal();
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
