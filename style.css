@@ -161,6 +161,13 @@ nav {
     text-decoration: underline;
 }
 
+/* Navigation Right Side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Language Toggle Button */
 .langue {
     display: flex;
@@ -189,6 +196,38 @@ nav {
 
 .lang-text {
     font-weight: 600;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(135deg, #00ffaa, #00d4ff);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* first Section */
@@ -585,16 +624,65 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 3rem;
+    nav {
+        padding: 1rem 1.5rem;
     }
 
-    .about-content {
-        grid-template-columns: 1fr;
+    .hamburger {
+        display: flex;
     }
 
     .nav-links {
-        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(15, 15, 30, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        border-bottom: 2px solid rgba(0, 255, 170, 0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+
+    .nav-links a:hover {
+        background: rgba(0, 255, 170, 0.1);
+    }
+
+    .first-title {
+        font-size: 3rem;
+    }
+
+    .apropos-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grille {
+        grid-template-columns: 1fr;
     }
 
     section {
@@ -603,6 +691,10 @@ footer {
 
     .cta-buttons {
         flex-direction: column;
+    }
+
+    .section-titre {
+        font-size: 2rem;
     }
 }
 

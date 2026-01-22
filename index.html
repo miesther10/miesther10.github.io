@@ -19,10 +19,17 @@
             <li><a href="#projets" onclick="showPage('projets')" data-fr="Projets" data-en="Projects">Projets</a></li>
             <li><a href="#contact" onclick="showPage('contact')" data-fr="Contact" data-en="Contact">Contact</a></li>
         </ul>
-        <button class="langue" onclick="changeLangage()">
-            <span class="lang-flag">🇬🇧</span>
-            <span class="lang-text">EN</span>
-        </button>
+        <div class="nav-right">
+            <button class="langue" onclick="changeLangage()">
+                <span class="lang-flag">🇬🇧</span>
+                <span class="lang-text">EN</span>
+            </button>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
 
 
@@ -591,6 +598,13 @@
         // Variable pour stocker la langue actuelle
         let currentLang = 'fr';
 
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
         function showPage(pageId) {
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => {
@@ -598,6 +612,12 @@
             });
 
             document.getElementById(pageId).classList.add('active');
+
+            // Fermer le menu mobile si ouvert
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
