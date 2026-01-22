@@ -9,6 +9,9 @@ body {
     background: #0f0f1e;
     color: #fff;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navigation */
@@ -607,6 +610,7 @@ footer {
 .page {
     display: none;
     animation: fadeIn 0.5s ease;
+    flex: 1;
 }
 
 .page.active {
