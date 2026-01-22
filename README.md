@@ -4,7 +4,7 @@ Portfolio personnel moderne et responsive présentant mes compétences en tant q
 
 ## 📋 Description
 
-Site web portfolio développé avec HTML, CSS et JavaScript vanilla, mettant en avant mon expertise en Business Intelligence, développement web et transformation digitale.
+Site web portfolio développé avec HTML, CSS et JavaScript, mettant en avant mon expertise en Business Intelligence, développement web et transformation digitale.
 
 ## ✨ Fonctionnalités
 
