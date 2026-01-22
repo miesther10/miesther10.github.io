@@ -1,41 +1,41 @@
-# 🌟 Portfolio EM - Esther MOUITY ITOUMBA
+# Portfolio EM - Esther MOUITY ITOUMBA
 
 Portfolio personnel moderne et responsive présentant mes compétences en tant qu'Analyste Technico-Fonctionnelle.
 
-## 📋 Description
+## Description
 
 Site web portfolio développé avec HTML, CSS et JavaScript, mettant en avant mon expertise en Business Intelligence, développement web et transformation digitale.
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-- 🎨 **Design moderne** avec animations fluides et effets de gradient
-- 📱 **Responsive** avec menu hamburger pour mobile
-- 🌐 **Multilingue** (Français/Anglais)
-- 🔐 **Conforme RGPD** avec politique de confidentialité complète
-- ⚡ **Navigation SPA** (Single Page Application) sans rechargement
-- 🎯 **Sections** : Accueil, À propos, Compétences, Projets, Contact
+-  **Design moderne** avec animations fluides et effets de gradient
+-  **Responsive** avec menu hamburger pour mobile
+-  **Multilingue** (Français/Anglais)
+-  **Conforme RGPD** avec politique de confidentialité complète
+-  **Navigation SPA** (Single Page Application) sans rechargement
+-  **Sections** : Accueil, À propos, Compétences, Projets, Contact
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - HTML5
 - CSS3 (animations, gradients, responsive design)
 - JavaScript (ES6+)
 - Design system avec palette de couleurs personnalisée
 
-## 🎨 Palette de couleurs
+##  Palette de couleurs
 
 - Primaire : `#00ffaa` (vert cyan)
 - Secondaire : `#00d4ff` (bleu cyan)
 - Fond : `#0f0f1e` (bleu foncé)
 - Texte : `#ffffff` / `#b0b0b0`
 
-## 📱 Responsive Design
+##  Responsive Design
 
 Le site s'adapte automatiquement à toutes les tailles d'écran :
 - **Desktop** : Navigation horizontale complète
 - **Mobile** (< 768px) : Menu hamburger animé
 
-## 🚀 Installation et utilisation
+##  Installation et utilisation
 
 1. Clonez le repository :
 ```bash
@@ -46,7 +46,7 @@ git clone https://github.com/miesther10/miesther10.github.io.git
 
 Ou visitez directement : [https://miesther10.github.io](https://miesther10.github.io)
 
-## 📂 Structure du projet
+##  Structure du projet
 
 ```
 miesther10.github.io/
@@ -56,19 +56,19 @@ miesther10.github.io/
 └── README.md          # Documentation
 ```
 
-## 🔒 Confidentialité
+##  Confidentialité
 
 Ce site ne collecte aucune donnée personnelle et n'utilise aucun cookie de tracking. Conforme au RGPD.
 
-## 📧 Contact
+##  Contact
 
 - **Email** : miesther@yahoo.com
 - **Portfolio** : [miesther10.github.io](https://miesther10.github.io)
 
-## 📄 Licence
+##  Licence
 
 © 2025 Esther MOUITY ITOUMBA - Tous droits réservés
 
 ---
 
-Développé avec ❤️ par Esther MOUITY ITOUMBA
+Développé par Esther MOUITY ITOUMBA
